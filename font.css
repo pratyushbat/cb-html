@@ -1,0 +1,15 @@
+#para1{
+    font-family: sans-serif; 
+    /* monospace 
+    takes same width */
+    font-size :2em;
+    /* 1em =14pt = default browser size/ */
+}
+#para2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size :3vh;
+    font-style: italic;
+    font-weight: bolder;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}

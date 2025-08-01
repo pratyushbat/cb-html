@@ -1,0 +1,67 @@
+* {
+    font-style: italic;
+}
+
+div {
+    color: blue;
+
+}
+
+p {
+    color: red;
+}
+
+/* attribute selector */
+
+input[disabled] {
+    font-size: 8pt;
+}
+
+.box {
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px; */
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px black;
+
+}
+
+#div1 {
+    background-color: yellow;
+}
+
+#div2 {
+    background-color: cyan;
+}
+
+#div3 {
+    background-color: orangered;
+}
+
+
+li {
+    font-weight: bold;
+    ;
+}
+
+ul>li {
+    color: blue;
+}
+
+ol>li {
+    color: red;
+}
+
+ul ul {
+    font-style: italic;
+}
+
+ol~ul {
+    background-color: orange;
+}
+
+ol+ul {
+    background-color: green;
+}

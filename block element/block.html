@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="block.css" />
+  </head>
+  <body>
+    <h1>Basic document flow</h1>
+    <div class="box">Float</div>
+    <p class="special">
+      I am a basic block level element. My adjacent block level elements sit on
+      new lines below me. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.
+      Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor
+      imperdiet nunc, at ultricies tellus laoreet sit amet.
+    </p>
+
+    <p>
+      left: Clear items floated to the left. right: Clear items floated to the
+      right. both: Clear any floated items, left or right. clear float By
+      default we span 100% of the width of our parent element, and we are as
+      tall as our child content. Our total width and height is our content +
+      padding + border width/height.
+    </p>
+
+    <p>
+      We are separated by our margins. Because of margin collapsing, we are
+      separated by the size of one of our margins, not both.
+    </p>
+
+    <p>
+      Inline elements <span>like this one</span> and <span>this one</span> sit
+      on the same line along with adjacent text nodes, if there is space on the
+      same line. Overflowing inline elements will
+      <span
+        >wrap onto a new line if possible (like this one containing text)</span
+      >, or just go on to a new line if not, much like this image will do:
+      <img
+        src="https://mdn.github.io/shared-assets/images/examples/long.jpg"
+        alt="snippet of cloth"
+      />
+    </p>
+
+<h3>when to use inlin block</h3>
+
+<h4>Inline-block elements are invaluable for creating horizontal navigation, button groups, or aligning images and text without forcing new lines, but with the ability to size and align the boxes as needed. They provide a flexible alternative to floating elements, which can introduce layout complexities and require clearing.</h4>
+<nav>
+  <a href="#" style="display:inline-block; padding: 10px 20px; background: #333; color: #fff; text-decoration:none;">Home</a>
+  <a href="#" style="display:inline-block; padding: 10px 20px; background: #555; color: #fff; text-decoration:none;">About</a>
+  <a href="#" style="display:inline-block; padding: 10px 20px; background: #777; color: #fff; text-decoration:none;">Contact</a>
+</nav>
+
+    <div style="width:200px;">
+  <span style="display:inline-block; width:90px; background:pink;">A</span>
+  <span style="display:inline-block; width:90px; background:lightgreen;">B</span>
+  <span style="display:inline-block; width:90px; background:lightyellow;">C</span>
+</div>
+
+
+
+
+<h3>Inline-block elements also align with the baseline by default, but their alignment can be explicitly controlled using the `vertical-align` CSS property. This makes them more versatile for constructing layouts where vertical alignment relative to neighboring content is required, such as vertically centering an icon with text.</h3>
+<span style="display:inline-block; vertical-align:middle; width:40px; height:40px; background:skyblue;">★</span>
+<span>Aligned Text</span>
+
+
+
+<h4>Inline elements do not accept width or height properties; their boxes will shrink-wrap to the content. If one attempts to set a width or height on an inline element, these properties are ignored by the browser. Their vertical padding and margins also do not affect the line height of surrounding content, often leading to unexpected visual results.</h4>
+    <span style="display:inline; width:100px; height:100px; background:lightblue;">
+  Inline Element
+</span>
+<h4>Inline-block elements, in contrast, do accept and respect width and height properties. Their boxes are sized according to both the content and any explicitly set dimensions. All box model properties—width, height, padding, margin, and border—are rendered as expected, without the restrictions found with inline elements.</h4>
+<span style="display:inline-block; width:100px; height:100px; background:lightcoral;">
+  Inline-block Element
+</span>
+  </body>
+</html>

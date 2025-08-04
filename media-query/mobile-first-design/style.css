@@ -1,0 +1,33 @@
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    background-color: brown;
+}
+
+/* min-width should be ascending order */
+@media (min-width:400px) {
+    .box {
+        background-color: rgb(207, 178, 15);
+    }
+
+}
+
+
+@media (min-width:800px) {
+    .box {
+        background-color: green;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .box {
+        background-color: rgb(147, 24, 172);
+    }
+
+}
+
+
+
+

@@ -39,6 +39,27 @@
     padding: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* div.item:nth-child(1) { 
     flex-grow: 4;
     order: 2;
@@ -49,9 +70,14 @@
     background-color: rgb(101, 10, 206);
 } */
 
-div.ites:nth-child(1) {
+/* 
+div.item:nth-child(1) {
     align-self: flex-start;
-}
+} */
+
+
+
+
 
 
 

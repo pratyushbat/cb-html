@@ -1,0 +1,65 @@
+.game {
+    margin: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: azure;
+
+
+}
+
+.box {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.player {
+    background-color: dodgerblue;
+    transform: translateY(225px);
+    animation: move 4s infinite linear;
+    animation-play-state: paused;
+}
+
+.game:active .player {
+    animation-play-state: running;
+}
+
+@keyframes move {
+    50% {
+         transform: translateY(225px) translateX(450px);
+         -webkit-transform: translateY(225px) translateX(450px);
+         -moz-transform: translateY(225px) translateX(450px);
+         -ms-transform: translateY(225px) translateX(450px);
+         -o-transform: translateY(225px) translateX(450px);
+}
+}
+
+.enemy {
+    background-color: red;
+    margin-left: 100px;
+    animation: bounce infinite linear;
+    -webkit-animation: bounce infinite linear;
+}
+
+/* a class having both will be seceted togthter */
+.enemy.one {
+   animation-duration: 3s;
+}
+
+.enemy.two {
+   animation-duration: 5s;
+}
+
+.three {
+    animation-timing-function: linear;
+} 
+
+
+
+@keyframes bounce {
+    50% {
+         transform: translateY(450px) ;
+      
+}
+}

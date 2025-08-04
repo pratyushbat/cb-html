@@ -1,0 +1,54 @@
+/* div {
+    background-color: red;
+    margin: 10px;
+    height: 40px;
+}
+
+div:hover {
+    background-color: violet;
+}
+
+div:active {
+    background-color: green;
+} */
+
+div.btn {
+    margin: 50px;
+    background-color: chocolate;
+    color: white;
+    font-size: 30pt;
+    padding: 50px;
+    width: 200px;
+    box-shadow: grey 10px 10px 10px;
+    transition: 0.8s;
+    border-radius: 10px;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+div.btn:hover {
+    transform: translate(-10px,-10px);
+    box-shadow: grey 20px 20px 20px;   
+    transition: 0.5s;
+    -webkit-transform: translate(10px,10px);
+    -moz-transform: translate(-10px,-10px);
+    -ms-transform: translate(-10px,-10px);
+    -o-transform: translate(-10px,-10px);
+    -webkit-transform: translate(-10px,-10px);
+}
+div.btn:active {
+    transform: translate(5px,5px);
+    box-shadow: grey 5px 5px 5px;
+    /*transition: 0.2s;
+    */
+    transition:   transform    0.2s,box-shadow 0.4s ;
+    -webkit-transition:   transform    0.2s,box-shadow 0.4s ;
+    -moz-transition:   transform    0.2s,box-shadow 0.4s ;
+    -ms-transition:   transform    0.2s,box-shadow 0.4s ;
+    -o-transition:   transform    0.2s,box-shadow 0.4s ;
+}

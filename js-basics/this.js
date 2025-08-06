@@ -43,3 +43,32 @@ z(); //point to window
 obj.d() //point to obj
 
 obj.e.n();//point to e w
+
+
+
+let obj1={a:10,b:20,c:30}
+let obj2=Object.create(obj1)
+obj2.p='aaca';
+obj2.q='aaca';
+obj2.r='aaca';
+let obj3=Object.create(obj2)
+console.log(obj1==obj2)
+obj2._proto_==obj1;
+
+// obj3.__proto__ ==obj2
+// obj3.__proto__.__proto__ ==obj1
+// while reading chain is followed with proto
+obj2.a++;
+obj2.a= obj2.a+1;
+// right side read from proto but not left side right from portoto
+
+var arr1=['asds',1]
+
+// NOTE js2 second video 35 min
+// two object can have same proto by type of cannot be same
+
+// let x= Object.create(Boolean.prototype);
+// typeof(x) ->Object inheriting from boolean
+// typeof(boolean) ->boolean
+// but 
+// x._proto_ ==== boolean._proto_

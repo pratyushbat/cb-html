@@ -1,2 +1,2 @@
-console.log('external script')
-alert('ext src')
+// console.log('external script')
+// alert('ext src')

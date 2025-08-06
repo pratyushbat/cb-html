@@ -1,0 +1,57 @@
+.container:nth-child(2n+1){
+    background-color: aqua;
+}
+.container {
+    height: auto;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 1;
+    background-color: linen;
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-color: mediumslateblue;
+    color: white;
+    font-size: 20pt;
+    border: 1px solid black;
+    z-index: 3;
+}
+
+.one> .three{
+position: relative;
+z-index: 5;
+}
+
+.one > .four {
+    background-color: brown;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+.one > .five {
+    position: fixed;
+    top: 10px; left: 230px;
+}
+.one > .six {
+    position: relative;
+z-index: 5;
+}
+/* .container > .one {
+    position: sticky;
+    top: 30px;
+    bottom: 30px;
+} */
+.container > .two {
+    position: sticky;
+    z-index: 2;
+        top: 30px;
+    bottom: 30px;
+}
+
+.item:nth-child(2n){
+    background-color: tomato;
+}

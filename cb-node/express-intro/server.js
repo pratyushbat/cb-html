@@ -26,13 +26,13 @@ app.get("/form", (req, res) => {
 });
 
 app.get("/:city/:greeting", (req, res) => {
-    console.log(req.params.city)
-  res.send(req.params.greeting+" to this city "+req.params.city);
+  console.log(req.params.city);
+  res.send(req.params.greeting + " to this city " + req.params.city);
 });
 
 app.get("/:person/:action", (req, res) => {
-    console.log(req.params.city)
-  res.send("Thank you "+req.params.person+" for "+req.params.action);
+  console.log(req.params.city);
+  res.send("Thank you " + req.params.person + " for " + req.params.action);
 });
 
 app.listen(4444, () => console.log("server started on localhost:4444"));

@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <input type="text" name="newtask" id="newtask" />
+      <button type="submit">Add</button>
+    </form>
+    <ul>
+      {{#each tasks as |t|}}
+        <li>{{t}}</li>
+      {{/each}}
+    </ul>
+  </body>
+</html>

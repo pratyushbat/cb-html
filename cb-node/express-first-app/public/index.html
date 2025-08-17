@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>index public pages</h1>
+    <!-- relative path recommended -->
+    <a href="./a.html">a</a> 
+    <a href="./b.html">b</a>
+    <!-- full path not recommended -->
+        <!-- <a href="/abc/a.html">a</a> 
+    <a href="/abc/b.html">b</a> -->
+    <!-- full path  not recommended -->
+     <form action="/hello" method="GET">
+        <input  name="user" type="text">
+        <button type="submit">Submit</button>
+     </form>
+      <h3>google search</h3>
+        <form  method="GET">
+        <input  name="q" type="text" placeholder="search query">
+        <button formaction="https://google.com/search" type="submit">Google Search</button>
+        <button formaction="https://bing.com/search" type="submit">Bing Search</button>
+        <button formaction="https://search.yahoo.com/search" type="submit">Yahoo Search</button>
+         <button formaction="https://duckduckgo.com/search" type="submit">Duck Search</button>
+     </form>
+       <form action="https://google.com/search"  method="GET">
+        <input  name="q" type="text" placeholder="search query">
+        <button  type="submit">Google Search</button>
+     </form>
+</body>
+</html>

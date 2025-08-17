@@ -1,0 +1,50 @@
+/* adjacent */
+h2 + p {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+/* not just adjacent */
+h2 p {
+  color: blue;
+}
+
+/* general sibling */
+h2 ~ p {
+  color: red;
+}
+
+/* child only  */
+section > p {
+  background-color: aqua;
+}
+
+/* child or grand child */
+section p {
+  font-family: monospace;
+}
+
+.box {
+  height: 40px;
+  width: 40px;
+  background-color: orange;
+  padding: 10px;
+  color: darkslategray;
+}
+
+.box:hover {
+  background-color: green;
+  color: beige;
+  font-weight: bold;
+}
+
+.box:active {
+  font-size: 25px;
+  height: 100px;
+  width: 100px;
+}
+
+input:focus {
+  font-size: 30pt;
+  width: 200px;
+}

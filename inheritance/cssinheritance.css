@@ -1,0 +1,49 @@
+#id1{
+    background-color: lightgreen;
+}
+
+*{
+    background-color: lightcyan;
+}
+div{
+    background-color: lightseagreen;
+}
+
+.cl1{
+    background-color: lightcoral;
+}
+
+
+#id1{
+    background-color: lightsteelblue;
+}
+
+.cl1{
+    background-color: lightskyblue;
+}
+
+/* priority
+id> class > element > * */
+
+.box{
+    /* margin: 20px;
+    padding: 10px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid black 3px;
+    box-shadow: antiquewhite 0ex;
+}
+
+#div1{
+    background-color: lightgreen;
+}
+
+#div2{
+    background-color: lightsalmon;
+}
+
+#div3{
+    background-color: lightcyan;    
+}

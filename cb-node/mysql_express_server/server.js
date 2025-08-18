@@ -24,7 +24,6 @@ app.post("/add", (req, res) => {
     console.log("added successfully");
     res.redirect("/");
   });
-
 });
 
 app.listen(4444, () => console.log("server started on localhost:4444"));

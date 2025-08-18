@@ -1,0 +1,1 @@
+sequelize require either 1 db so we used mysql2

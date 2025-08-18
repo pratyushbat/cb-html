@@ -4,7 +4,6 @@ const task = async () => {
   try {
     await db.sync();
     const students = await Student.findAll({
-    //   where: {age: {$gt: 12 }},
           where: {
             age: {
               [ Op.gt]: 15
@@ -12,7 +11,6 @@ const task = async () => {
             },
         order:[['age','desc']]
     });
-    // console.log(students);
     students.forEach((student) => {
       console.log(
         `name: ${student.dataValues.name} \t age: ${student.dataValues.age} `

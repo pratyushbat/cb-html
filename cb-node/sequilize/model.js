@@ -10,8 +10,6 @@ const Student = db.define("student", {
   age: { type: DataTypes.INTEGER(20), allowNull: false, default: -1 },
 });
 
-
-
 // force will delete existing data
 // db.sync({force:true})
 //   .then(() => console.log("db sync"))
@@ -21,5 +19,4 @@ db.sync({ alter: true })
   .then(() => console.log("db sync"))
   .catch(console.error);
 
-
-  module.exports={db,Student};
+module.exports = { db, Student };

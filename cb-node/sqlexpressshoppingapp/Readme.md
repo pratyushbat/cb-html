@@ -1,0 +1,1 @@
+require('x')=> x.js , x.json ,x/index.js

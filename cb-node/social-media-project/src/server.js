@@ -3,6 +3,7 @@ const path=require('path');
 const {db}=require('./db/model');
 const {userRoute}=require('./routes/users')
 const {postRouter}=require('./routes/posts')
+const {commentRouter}=require('./routes/posts/comments')
 
 const app=express();
 // for post
@@ -12,6 +13,7 @@ app.use(express.urlencoded({extended:true}));
 
 app.use('/api/users',userRoute)
 app.use('/api/posts',postRouter)
+app.use('/api/comments',commentRouter)
 app.use('/',express.static(path.join(__dirname,'/public')));
 // db.sync({force:true})
 db.sync().then((result) => {

@@ -20,7 +20,7 @@ async function getPostById(id){
 }
 
 // Test Code
-async function task() {
+// async function task() {
     // console.log(
     //   await createNewPost(
     //     1,
@@ -41,7 +41,7 @@ async function task() {
   // for (let p of posts) {
   //   console.log(`${p.title} \nauthor: ${p.user.username} \n${p.body} \n`);
   // }
-}
+// }
 // task();
 
 

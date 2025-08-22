@@ -41,4 +41,5 @@ userRoute.post("/", async (req, res) => {
   const users= await createUserbyusername(username);
   res.status(201).send(users);
 });
+
 module.exports = { userRoute };

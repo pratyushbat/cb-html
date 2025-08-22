@@ -7,8 +7,24 @@ function createAnonUser() {
   });
   return user;
 }
+function createUserbyusername(username) {
+  const user = Users.create({
+    username
+  });
+  return user;
+}
 
-module.exports = { createAnonUser };
+async function getUserById(id){
+  return await Users.findOne({where:{id}});
+}
+async function getAllUsers(id){
+  return await Users.findAll();
+}
+async function getUserByUsername(username){
+  return await Users.findOne({where:{username}});
+}
+
+module.exports = { getAllUsers,createAnonUser ,getUserById,getUserByUsername ,createUserbyusername};
 
 
 // Test code

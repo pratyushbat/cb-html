@@ -6,3 +6,4 @@ controllers #funciton to connect routes to db ops
 db  #connection and model definition
 public #html css and js for static files
 routes #express middleware
+win +v ->clipboard

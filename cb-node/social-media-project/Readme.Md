@@ -7,3 +7,7 @@ db  #connection and model definition
 public #html css and js for static files
 routes #express middleware
 win +v ->clipboard
+
+
+async-independent loaded each file,anyone can load early
+defer -load after page load

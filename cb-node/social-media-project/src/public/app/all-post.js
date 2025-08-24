@@ -23,12 +23,3 @@ function loadPosts() {
 
 
 
-// function loadPosts(title, body) {
-//   $.post("/api/posts", { userId: 2, title, body }, (posts) => {
-//     if (posts) {
-//       console.log("registered posts is ", posts);
-//       //   $('#nav-username').text(currentUser.username);
-//       // console.log($('#nav-username'))
-//     }
-//   });
-// }

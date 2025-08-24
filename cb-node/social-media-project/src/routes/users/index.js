@@ -2,7 +2,8 @@ const { Router } = require("express");
 const userRoute = new Router();
 
 const {
-  createAnonUser,createUserbyusername,
+  createAnonUser,
+  createUserbyusername,
   getUserById,
   getUserByUsername,
   getAllUsers,
@@ -14,7 +15,6 @@ userRoute.get("/", async (req, res) => {
   users = await getAllUsers();
   res.status(200).send(users);
 });
-
 
 userRoute.get("/:id", async (req, res) => {
   let user;
@@ -29,16 +29,20 @@ userRoute.get("/:id", async (req, res) => {
   else res.status(404).send({ error: "no such user id or username" });
 });
 
-
-
+userRoute.post("/username", async (req, res) => {
+  console.log(req.body);
+  const { username } = req.body;
+  if (!username) {
+    return res
+      .status(400)
+      .send({ error: "Need userid,title body to create post" });
+  }
+  const users = await createUserbyusername(username);
+  res.status(201).send(users);
+});
 
 userRoute.post("/", async (req, res) => {
-    console.log(req.body)
-    const { username } = req.body;
-    if(!username){
-        return res.status(400).send({error:'Need userid,title body to create post'});
-    }
-  const users= await createUserbyusername(username);
+  const users = await createAnonUser();
   res.status(201).send(users);
 });
 

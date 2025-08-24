@@ -1,7 +1,14 @@
-#footer{
-    position: sticky; bottom: 0;
-    background-color: var(--light);
+#navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
-#content{
-height: 2000px;
+
+#content {
+    height: 2000px;
+}
+
+#footer {
+    position: sticky;
+    bottom: 0px;
 }

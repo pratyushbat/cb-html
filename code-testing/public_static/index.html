@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <script defer src="js/bootstrap.js"></script>
+    <script defer src="js/popper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+
+
+    <style>
+        .container {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" type="number" id="km" placeholder="kmstravelled">
+                <br>
+                <input class="form-control" type="number" id="min" placeholder="mins taken">
+                <br>
+                <button class="btn btn-success" id="calcfare">Calculate Fare</button>
+                <br>
+                <div id="fare"> </div>
+            </div>
+            <div class="col-md-6">
+                <div id="ratediv">
+
+                </div>
+                <button class="btn btn-secondary" id="rateBtn">Show Rate </button>
+              
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

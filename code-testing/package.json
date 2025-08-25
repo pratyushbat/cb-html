@@ -1,0 +1,21 @@
+{
+  "name": "code-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "cover": "nyc --reporter=html --reporter=text  --reporter=lcovonly mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^6.0.1",
+    "express": "^5.1.0",
+    "fix-esm": "^1.0.1",
+    "mocha": "^11.7.1",
+    "nyc": "^17.1.0",
+    "request": "^2.88.2"
+  }
+}

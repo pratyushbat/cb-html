@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <script defer src="js/bootstrap.js"></script>
+    <script defer src="js/popper.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Socket io chat room</h1>
+                <div id="loginBox">
+                    <input class="form-control" type="text" id="inpUserName" placeholder="username">
+                    <input class="form-control" type="password" id="inpPassword" placeholder="password">
+                    <button class="btn-success" id="btnStart">START</button>
+                </div>
+                <div id="chatBox">
+                    <input class="form-control" type="text" id="inpToUser" placeholder="Send to (default everyone)">
+                    <input class="form-control" type="text" id="inpNewMsg" placeholder="New message">
+                    <button class="btn-success" id="btnSendMsg">SEND</button>
+                    <ul id="ulMsgs"></ul>
+                   
+                </div>
+            </div>
+            <div class="col-4">
+              
+                 <div id="parent">  <h2>Username</h2></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
